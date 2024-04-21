@@ -13,7 +13,6 @@
 @media only screen and (max-width: 600px) {
     /* Styles for screens smaller than 600px */
 }
-
 .main {
     width: 100%;
     background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(bg.jpg);
@@ -26,7 +25,7 @@
     justify-content: center;
     align-items: center;
     background-color: white; /* Example background color for navbar */
-    height: 70px; /* Example height of navbar */
+    height: auto; /* Allow navbar height to adjust based on content */
     position: relative;
 }
 
@@ -50,6 +49,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 90%; /* Adjust the width of the search container */
 }
 
 .search-wrapper {
@@ -62,7 +62,8 @@
     padding: 15px;
     border: none;
     border-radius: 60px; /* Adjust based on desired oblong shape */
-    width: 400px; /* Adjust width as needed */
+    width: 80%; /* Adjust the width of the search input */
+    max-width: 300px; /* Set a maximum width to prevent it from being too wide */
 }
 
 .search-button {
@@ -77,8 +78,8 @@ footer {
     background-color: #cfc2b8;
     color: #362616;
     text-align: left;
-    padding: 10px 0;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px; /* Increase padding for better spacing */
 }
 
 .footer img {
@@ -111,24 +112,5 @@ footer {
 .suggestions-box div:hover {
     background-color: #f8f8f8;
 }
-/* Add this CSS at the end of your existing stylesheet */
 
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 768px) {
-    .navbar {
-        height: auto; /* Allow navbar height to adjust based on content */
-    }
 
-    .search-input {
-        width: 80%; /* Adjust the width of the search input */
-        max-width: 300px; /* Set a maximum width to prevent it from being too wide */
-    }
-
-    .search-container {
-        width: 90%; /* Adjust the width of the search container */
-    }
-
-    .footer {
-        padding: 10px; /* Increase padding for better spacing */
-    }
-}
