@@ -111,3 +111,24 @@ footer {
 .suggestions-box div:hover {
     background-color: #f8f8f8;
 }
+/* Add this CSS at the end of your existing stylesheet */
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: auto; /* Allow navbar height to adjust based on content */
+    }
+
+    .search-input {
+        width: 80%; /* Adjust the width of the search input */
+        max-width: 300px; /* Set a maximum width to prevent it from being too wide */
+    }
+
+    .search-container {
+        width: 90%; /* Adjust the width of the search container */
+    }
+
+    .footer {
+        padding: 10px; /* Increase padding for better spacing */
+    }
+}
